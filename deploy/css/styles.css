@@ -453,20 +453,20 @@ header > div aside a {
 /* =============
     Footer
 ============= */
-#preloader-container {
+#logo-container {
   position: absolute;
   height: 100vh;
   width: 100%;
   z-index: 500;
   background-color: #293241;
 }
-#preloader-container > div {
+#logo-container > div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-#preloader-container > div svg {
+#logo-container > div svg {
   border: 1px;
 }
 
