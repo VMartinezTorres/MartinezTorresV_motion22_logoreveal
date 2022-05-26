@@ -9,22 +9,16 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MotionPathHelpe
 
 const mainTL = gsap.timeline();
 
-mainTL.from("#Vector", {duration: 3, drawSVG: 0}, "field")
-      .from("#Vector_2", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_3", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_4", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_5", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_6", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_7", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_8", {duration: 3, drawSVG: 0},"field")
-      .from("#Vector_9", {duration: 3, drawSVG: 0},"field")
-      .fromTo("#Vector_10", {drawSVG: "100% 100%"}, {duration: 3, drawSVG: "100% 0%"},"field");
+mainTL.from("#Vector", {duration: 3, drawSVG: 0}, "ol")
+      .from("#Vector_2", {duration: 3, drawSVG: 0},"ol")
+      .from("#Vector_3", {duration: 3, drawSVG: 0},"ol")
+      .from("#Vector_4", {duration: 3, drawSVG: 0},"ol")
 
-const secTL = gsap.timeline();  
+//const secTL = gsap.timeline();  
 
 
 
-secTL.from("#gold_1", {duration: 2, x: -20, y: -10}, "gold")
+/* secTL.from("#gold_1", {duration: 2, x: -20, y: -10}, "gold")
      .from("#gold_2", {duration: 2, y: -40}, "gold")  //goalie
      .from("#gold_3", {duration: 2, x: -20, y: -10}, "gold")
      .from("#gold_4", {duration: 2, x: -20, y: -10}, "gold")
@@ -58,7 +52,7 @@ secTL.from("#gold_1", {duration: 2, x: -20, y: -10}, "gold")
 
       .to("#Vector_5", {stroke:"#ffffff", duration: 0.25, repeat: -1, repeatDelay: 3.75, yoyo: true}, "gp+=4")
       .to("#Vector_10", {stroke:"#29ABE2", duration: 0.25, repeat: -1, repeatDelay: 3.75, yoyo: true}, "gp+=4")
-     ;
+     ; */ 
 
      
 
