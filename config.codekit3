@@ -95,12 +95,12 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/preloader.kit" : {
+    "\/dev\/content\/logo.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/preloader.html",
+      "oAP" : "\/dev\/content\/logo.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
@@ -146,7 +146,7 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/preloader.html" : {
+    "\/dev\/logo.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
@@ -322,7 +322,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_preloader.scss" : {
+    "\/dev\/scss\/sections\/_logo.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -330,7 +330,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_preloader.css",
+      "oAP" : "\/dev\/scss\/sections\/_logo.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

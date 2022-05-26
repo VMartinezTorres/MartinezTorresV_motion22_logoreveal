@@ -9,10 +9,18 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MotionPathHelpe
 
 const mainTL = gsap.timeline();
 
-mainTL.from("#Vector", {duration: 3, drawSVG: 0}, "ol")
-      .from("#Vector_2", {duration: 3, drawSVG: 0},"ol")
-      .from("#Vector_3", {duration: 3, drawSVG: 0},"ol")
-      .from("#Vector_4", {duration: 3, drawSVG: 0},"ol")
+mainTL.from("#Vector", {duration: 3, drawSVG: 1})
+.from("#Vector_2", {duration: 3, drawSVG: 1})
+.from("#Vector_3", {duration: 3, drawSVG: 1})
+.from("#Vector_4", {duration: 3, drawSVG: 1})
+
+.to("#star", {duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 0, end: 1}, ease: "power1.inOut"})
+
+
+
+
+
+;
 
 //const secTL = gsap.timeline();  
 
