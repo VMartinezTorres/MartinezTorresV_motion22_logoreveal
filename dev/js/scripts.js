@@ -9,12 +9,22 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MotionPathHelpe
 
 const mainTL = gsap.timeline();
 
-mainTL.from("#Vector", {duration: 3, drawSVG: 0})
-.from("#Vector_2", {duration: 3, drawSVG: 0})
-.from("#Vector_3", {duration: 3, drawSVG: 0})
-.from("#Vector_4", {duration: 3, drawSVG: 0})
+gsap.set("#star", {transformOrigin: "center", scale:0});
 
-.to("#star", {duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 0, end: 1}, ease: "power1.inOut"})
+mainTL.fromTo("#Vector", {drawSVG: "80% 80%"},{duration: 1, drawSVG: "0% 100%"}, "line")
+.from("#Vector_2", {duration: 4, drawSVG: 0}, "line")
+.from("#Vector_3", {duration: 2, drawSVG: 0}, "line")
+.from("#Vector_4", {duration: 4, drawSVG: 0}, "line")
+
+.fromTo("#word", 3, {fill:"none"}, {fill:"#29ABE2", duration:.1})
+
+.to("#star", {scale: 1, rotation: "+=360", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=5")
+
+.to("#star", {scale:1, duration:0.5}, "-=0.5")
+.to("#star", {scale:2, duration:0.2, yoyo:true, repeat:1, transformOrigin: "center", ease:"ease.out"}, "-=0.1")
+
+
+
 ;
 
 
