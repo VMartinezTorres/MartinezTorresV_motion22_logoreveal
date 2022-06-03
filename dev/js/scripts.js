@@ -10,18 +10,34 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MotionPathHelpe
 const mainTL = gsap.timeline();
 
 gsap.set("#star", {transformOrigin: "center", scale:0});
+gsap.set("#star2", {transformOrigin: "center", scale:0});
+gsap.set("#star3", {transformOrigin: "center", scale:0});
+gsap.set("#star4", {transformOrigin: "center", scale:0});
+gsap.set("#star5", {transformOrigin: "center", scale:0});
 
-mainTL.fromTo("#Vector", {drawSVG: "80% 80%"},{duration: 1, drawSVG: "0% 100%"}, "line")
+mainTL.fromTo("#Vector", {drawSVG: "80% 80%"},{duration: 2, drawSVG: "0% 100%"}, "line")
 .from("#Vector_2", {duration: 4, drawSVG: 0}, "line")
 .from("#Vector_3", {duration: 2, drawSVG: 0}, "line")
-.from("#Vector_4", {duration: 4, drawSVG: 0}, "line")
+.from("#Vector_4", {duration: 3, drawSVG: 0}, "line")
 
 .fromTo("#word", 3, {fill:"none"}, {fill:"#29ABE2", duration:.1})
 
-.to("#star", {scale: 1, rotation: "+=360", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=5")
+.to("#star", {scale: 1, rotation: "+=720", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=4")
+.to("#star2", {scale: 1, rotation: "+=720", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=3.8")
+.to("#star3", {scale: 1, rotation: "+=720", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=3.7")
+.to("#star4", {scale: 1, rotation: "+=720", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=3.6")
+.to("#star5", {scale: 1, rotation: "+=720", duration: 4, motionPath:{path:"#star_path", align: "self", alignOrigin:[0.5, 0.5], start: 1, end: 0}, ease: "power1.inOut"}, "-=3.5")
 
 .to("#star", {scale:1, duration:0.5}, "-=0.5")
-.to("#star", {scale:2, duration:0.2, yoyo:true, repeat:1, transformOrigin: "center", ease:"ease.out"}, "-=0.1")
+.to("#star2", {scale:1, duration:0.5, alpha: 0}, "-=0.05")
+.to("#star3", {scale:1, duration:0.5, alpha: 0}, "-=0.04")
+.to("#star4", {scale:1, duration:0.5, alpha: 0}, "-=0.03")
+.to("#star5", {scale:1, duration:0.5, alpha: 0}, "-=0.04")
+
+
+.to("#star", {scale:2, duration:0.2, yoyo:true, repeat:1, transformOrigin: "center", ease:"ease.out"}, "-=0.5")
+
+.to("#Rectangle_1", {duration: 3, x:900, ease: "power1.inOut"})
 
 
 
